@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`initial render On home page 1`] = `
+<div>
+  <div
+    class="app"
+  >
+    <div
+      class="header"
+    >
+      <div>
+         Something Here
+      </div>
+      <input
+        label="searchBar"
+        placeholder="Search for..."
+        type="text"
+      />
+      <button
+        class="cartBtn"
+      >
+         Cart
+      </button>
+    </div>
+    <div
+      class="main"
+    >
+      <div>
+        Main
+      </div>
+      <div
+        class="cart"
+      >
+        <h1>
+          Cart
+        </h1>
+        <div>
+          Cartitem1
+        </div>
+        <div>
+          Cartitem2
+        </div>
+      </div>
+    </div>
+    <div
+      class="footer"
+    >
+      <div>
+        Footer 
+      </div>
+      <a
+        href="https://github.com/BaoWoW123/Shopping-Cart"
+        target="_blank"
+      >
+        Check out the code!
+      </a>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,83 @@
+body {
+    background-color: black;
+    color: white;
+    margin: auto;
+    font-size: 2rem;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: lightblue;
+    width: 100%;
+    padding: 2rem 0px;
+}
+.main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    height: 100%;
+    width: 100%;
+    border-top: 2px solid white;
+
+}
+
+.footer {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0px ;
+    background-color: gray;
+    border-top: 2px solid white;
+}
+
+.cartBtn {
+    background-color: transparent;
+    border: none;
+    font: inherit;
+    color: inherit;
+}
+.cart {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+    top: 0;
+    right: 0;
+    padding: 0px 5rem;
+    background-color: lightblue;
+    height: 100%;
+    width: 2rem;
+    gap: 20px;
+    opacity: 0;
+    transition: .2s ease-out;
+}
+
+.cart.active{
+    visibility: visible;
+    transition: .2s ease-out;
+    width: 11rem;
+    opacity: 1;
+}
+a {
+    text-decoration: none;
+    color: white;
+    transition: .1s ease;
+}
+
+a:hover {
+    transition: .1s ease;
+    transform:  scale(1.3);
+    color: lightblue;
+}
