@@ -75,8 +75,11 @@ a {
     color: white;
     transition: .1s ease;
 }
+h2 {
+    margin: 0px;
+}
 
-a:hover {
+.githubLink:hover {
     transition: .1s ease;
     transform:  scale(1.3);
     color: lightblue;

@@ -11,6 +11,22 @@ exports[`initial render On home page 1`] = `
       <div>
          Something Here
       </div>
+      <a
+        class="homeLink"
+        href="/"
+      >
+        <h2>
+          Home
+        </h2>
+      </a>
+      <a
+        class="shopLink"
+        href="/shop"
+      >
+        <h2>
+          Shop
+        </h2>
+      </a>
       <input
         label="searchBar"
         placeholder="Search for..."
@@ -19,14 +35,19 @@ exports[`initial render On home page 1`] = `
       <button
         class="cartBtn"
       >
-         Cart
+         
+        Cart
       </button>
     </div>
     <div
       class="main"
     >
-      <div>
-        Main
+      <div
+        class="home"
+      >
+        <h1>
+          Home page
+        </h1>
       </div>
       <div
         class="cart"
@@ -49,6 +70,7 @@ exports[`initial render On home page 1`] = `
         Footer 
       </div>
       <a
+        class="githubLink"
         href="https://github.com/BaoWoW123/Shopping-Cart"
         target="_blank"
       >
