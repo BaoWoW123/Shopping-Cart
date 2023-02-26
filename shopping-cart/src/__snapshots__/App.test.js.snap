@@ -8,9 +8,9 @@ exports[`initial render On home page 1`] = `
     <div
       class="header"
     >
-      <div>
-         Something Here
-      </div>
+      <h2>
+         Boulder Shop
+      </h2>
       <a
         class="homeLink"
         href="/"
@@ -28,6 +28,7 @@ exports[`initial render On home page 1`] = `
         </h2>
       </a>
       <input
+        class="searchBar"
         label="searchBar"
         placeholder="Search for..."
         type="text"
@@ -35,8 +36,10 @@ exports[`initial render On home page 1`] = `
       <button
         class="cartBtn"
       >
-         
-        Cart
+        <img
+          alt="cart image"
+          src="cart.png"
+        />
       </button>
     </div>
     <div
@@ -45,9 +48,21 @@ exports[`initial render On home page 1`] = `
       <div
         class="home"
       >
-        <h1>
-          Home page
-        </h1>
+        <div
+          class="homeHeader"
+        >
+          <h1>
+            Everything you need to climb
+          </h1>
+        </div>
+        <a
+          class="homeShopLink"
+          href="/shop"
+        >
+          <h2>
+            Shop
+          </h2>
+        </a>
       </div>
       <div
         class="cart"
@@ -66,15 +81,12 @@ exports[`initial render On home page 1`] = `
     <div
       class="footer"
     >
-      <div>
-        Footer 
-      </div>
       <a
         class="githubLink"
         href="https://github.com/BaoWoW123/Shopping-Cart"
         target="_blank"
       >
-        Check out the code!
+        Check out the code here!
       </a>
     </div>
   </div>

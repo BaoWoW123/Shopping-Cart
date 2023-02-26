@@ -1,86 +1,109 @@
 body {
-    background-color: black;
-    color: white;
-    margin: auto;
-    font-size: 2rem;
+  background-color: black;
+  color: white;
+  margin: auto;
+  font-size: 2rem;
+  height: auto;
 }
 
 .app {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
 }
+
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: lightblue;
-    width: 100%;
-    padding: 2rem 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  width: 100%;
+  padding: 2rem 0px;
 }
+
 .main {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0px;
-    height: 100%;
-    width: 100%;
-    border-top: 2px solid white;
-
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-top: 2px solid white;
 }
 
+.homeLink:hover {
+  opacity: 0.8;
+}
+.shopLink:hover {
+  opacity: 0.8;
+}
+
+.searchBar {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 20rem;
+  margin-bottom: -10px;
+  background-image: url("../images/search.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+::placeholder {
+  color: white;
+  opacity: 0.7;
+}
 .footer {
-    width: 100vw;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px 0px ;
-    background-color: gray;
-    border-top: 2px solid white;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0px;
+  background-color: black;
+  border-top: 2px solid white;
 }
 
 .cartBtn {
-    background-color: transparent;
-    border: none;
-    font: inherit;
-    color: inherit;
+  background-color: transparent;
+  border: none;
 }
-.cart {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    visibility: hidden;
-    top: 0;
-    right: 0;
-    padding: 0px 5rem;
-    background-color: lightblue;
-    height: 100%;
-    width: 2rem;
-    gap: 20px;
-    opacity: 0;
-    transition: .2s ease-out;
+.cartBtn:hover {
+  opacity: 0.8;
 }
 
-.cart.active{
-    visibility: visible;
-    transition: .2s ease-out;
-    width: 11rem;
-    opacity: 1;
+.cart {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  visibility: hidden;
+  top: 0;
+  right: 0;
+  padding: 0px 5rem;
+  background-color: lightblue;
+  height: 100%;
+  width: 2rem;
+  gap: 20px;
+  opacity: 0;
+  transition: 0.2s ease-out;
+}
+
+.cart.active {
+  visibility: visible;
+  transition: 0.2s ease-out;
+  width: 11rem;
+  opacity: 1;
 }
 a {
-    text-decoration: none;
-    color: white;
-    transition: .1s ease;
+  text-decoration: none;
+  color: white;
+  transition: 0.1s ease;
 }
 h2 {
-    margin: 0px;
+  margin: 0px;
 }
 
 .githubLink:hover {
-    transition: .1s ease;
-    transform:  scale(1.3);
-    color: lightblue;
+  transition: 0.1s ease;
+  transform: scale(1.3);
+  color: lightblue;
 }
