@@ -27,12 +27,6 @@ exports[`initial render On home page 1`] = `
           Shop
         </h2>
       </a>
-      <input
-        class="searchBar"
-        label="searchBar"
-        placeholder="Search for..."
-        type="text"
-      />
       <button
         class="cartBtn"
       >

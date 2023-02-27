@@ -19,12 +19,7 @@ const Header = () => {
       <Link to="/shop" className="shopLink">
         <h2>Shop</h2>
       </Link>
-      <input
-        label="searchBar"
-        className="searchBar"
-        type="text"
-        placeholder="Search for..."
-      ></input>
+
       <button className="cartBtn" onClick={showCart}>
         <img src={cart} alt="cart image" />
       </button>

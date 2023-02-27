@@ -22,8 +22,8 @@ describe("initial render", () => {
     );
     const shopBtn = container.querySelector(".shopLink");
     await userEvent.click(shopBtn);
-    expect(screen.getByRole("heading", { name: "Shop page" }).textContent).toBe(
-      "Shop page"
+    expect(screen.getByRole("heading", { name: "Products" }).textContent).toBe(
+      "Products"
     );
   });
 });
