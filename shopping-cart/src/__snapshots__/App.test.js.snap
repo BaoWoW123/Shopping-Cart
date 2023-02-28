@@ -64,11 +64,15 @@ exports[`initial render On home page 1`] = `
         <h1>
           Cart
         </h1>
-        <div>
-          Cartitem1
-        </div>
-        <div>
-          Cartitem2
+        <div
+          class="cartItems"
+        >
+          <div>
+            Cartitem1
+          </div>
+          <div>
+            Cartitem2
+          </div>
         </div>
       </div>
     </div>

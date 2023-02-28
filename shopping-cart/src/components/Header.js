@@ -5,9 +5,17 @@ import search from "../images/search.png";
 const Header = () => {
   const showCart = () => {
     const cart = document.querySelector(".cart");
-    return cart.className === "cart"
-      ? (cart.className = "cart active")
-      : (cart.className = "cart");
+    if (cart.className === "cart") {
+      cart.classList.add("visuallyHidden");
+      setTimeout(() => {
+        cart.classList.add("hidden");
+      }, 120);
+    } else {
+      cart.classList.remove("hidden");
+      setTimeout(() => {
+        cart.classList.remove("visuallyHidden");
+      }, 50);
+    }
   };
 
   return (
