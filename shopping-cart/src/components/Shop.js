@@ -1,9 +1,14 @@
 import "../styles/shop.css";
 import React from "react";
-import products from "../images/images";
-const Shop = () => {
-  const displayItem = (e) => {
-    console.log(e.target.className);
+import { useNavigate } from "react-router-dom";
+
+const Shop = (props) => {
+  let sortItems = props.props.props;
+  let products = props.props.items;
+  const navigate = useNavigate();
+  const selectProduct = (e) => {
+    props.props.selectProduct(e);
+    navigate(`/shop/` + e.name);
   };
   return (
     <div className="shop">
@@ -21,16 +26,19 @@ const Shop = () => {
         </div>
         <div className="shopCategories">
           <h3>Categories</h3>
-          <div className="shoes" onClick={displayItem}>
+          <div className="showAll" onClick={sortItems("all")}>
+            Show All
+          </div>
+          <div className="shoes" onClick={sortItems("shoes")}>
             Climbing Shoes
           </div>
-          <div className="chalk" onClick={displayItem}>
+          <div className="chalk" onClick={sortItems("chalk")}>
             Chalk
           </div>
-          <div className="pads" onClick={displayItem}>
+          <div className="pads" onClick={sortItems("pads")}>
             Boulder Pads
           </div>
-          <div className="misc" onClick={displayItem}>
+          <div className="misc" onClick={sortItems("misc")}>
             Accessories
           </div>
         </div>
@@ -39,7 +47,13 @@ const Shop = () => {
             return (
               <div className="product" key={i}>
                 <div className="productName">{product.name}</div>
-                <img className="productImg" src={product.img} key={i} />
+                <div className="productPrice"> {product.price}</div>
+                <img
+                  className="productImg"
+                  src={product.img}
+                  key={i}
+                  onClick={() => selectProduct(product)}
+                />
               </div>
             );
           })}

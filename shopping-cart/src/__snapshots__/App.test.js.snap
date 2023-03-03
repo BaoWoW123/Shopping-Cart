@@ -59,7 +59,7 @@ exports[`initial render On home page 1`] = `
         </a>
       </div>
       <div
-        class="cart"
+        class="cart visuallyHidden hidden"
       >
         <h1>
           Cart

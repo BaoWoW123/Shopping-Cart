@@ -9,6 +9,7 @@
   background-attachment: fixed;
   border-right: 2px solid white;
   box-sizing: border-box;
+  min-height: 80vh;
 }
 
 .shopDisplay {
@@ -34,6 +35,7 @@
 
 .shopCategories > :nth-child(n + 2):hover {
   opacity: 0.7;
+  cursor: pointer;
 }
 
 .shopHeader {
@@ -89,11 +91,11 @@
   position: relative;
 }
 
-.productName {
+.productName,
+.productPrice {
   display: flex;
   justify-content: center;
   text-align: center;
-  bottom: 0;
   width: 100%;
   position: absolute;
   font-size: 1em;
@@ -101,13 +103,17 @@
   visibility: hidden;
   opacity: 0;
   height: 10%;
+  bottom: 5px;
 }
 
-.product:hover > .productName {
+.productName {
+  top: 1px;
+}
+
+.product:hover > :is(.productName, .productPrice) {
   height: 15%;
   visibility: visible;
-  background-color: black;
   box-sizing: border-box;
-  opacity: 0.9;
+  opacity: 1;
   transition: 0.3s ease;
 }
