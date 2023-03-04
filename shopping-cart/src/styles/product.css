@@ -1,5 +1,5 @@
 .productPage {
-  height: 80vh;
+  display: flex;
   width: 100%;
   background-image: url("../images/rockWall.jpg");
   background-position: top;
@@ -57,12 +57,11 @@ li {
 
 li:hover {
   background-color: grey;
+  cursor: pointer;
 }
 
-.quantityRange {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+li:active {
+  opacity: 0.5;
 }
 
 .addProductBtn {

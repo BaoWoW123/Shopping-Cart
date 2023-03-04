@@ -15,7 +15,7 @@ const Main = (props) => {
           <Route path=":id" element={<Product props={props} />} />
         </Route>
       </Routes>
-      <Cart />
+      <Cart cart={props}/>
     </div>
   );
 };

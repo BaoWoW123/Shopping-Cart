@@ -8,7 +8,7 @@ const Home = () => {
         <h1>Everything you need to climb</h1>
       </div>
       <Link to="/shop" className="homeShopLink">
-        <h2>Shop</h2>
+        <h1>Shop</h1>
       </Link>
     </div>
   );

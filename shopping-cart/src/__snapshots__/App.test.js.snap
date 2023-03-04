@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`initial render On home page 1`] = `
+exports[`initial render Snapshot home page  1`] = `
 <div>
   <div
     class="app"
@@ -53,9 +53,9 @@ exports[`initial render On home page 1`] = `
           class="homeShopLink"
           href="/shop"
         >
-          <h2>
+          <h1>
             Shop
-          </h2>
+          </h1>
         </a>
       </div>
       <div
@@ -66,14 +66,10 @@ exports[`initial render On home page 1`] = `
         </h1>
         <div
           class="cartItems"
-        >
-          <div>
-            Cartitem1
-          </div>
-          <div>
-            Cartitem2
-          </div>
-        </div>
+        />
+        <button>
+          Checkout
+        </button>
       </div>
     </div>
     <div
